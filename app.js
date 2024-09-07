@@ -17,7 +17,7 @@ timeList.addEventListener('click', event => {
     time = parseInt(event.target.getAttribute('data-time'));
     screens[1].classList.add('up');
     startGame();
-    winTheGame(); // сама ловит круги
+    // winTheGame(); // сама ловит круги
   }
 })
 
@@ -85,6 +85,7 @@ function getRandomColor() {
 }
 
 // Автоматически ловит круги
+/*
 function winTheGame() {
   function kill() {
     const circle = document.querySelector('.circle');
@@ -94,3 +95,4 @@ function winTheGame() {
   }
   setInterval(kill, 100);
 }
+*/
